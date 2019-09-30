@@ -1,0 +1,34 @@
+{
+    "name": "mesavolt/inflector",
+    "description": "Easy-to-use French plural generator",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MesaVolt",
+            "email": "contact@mesavolt.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "MesaVolt\\" : "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MesaVolt\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "php-coveralls/php-coveralls": "^2.0",
+        "phpunit/phpunit": "^7",
+        "twig/twig": "^2.4"
+    }
+}
