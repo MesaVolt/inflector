@@ -55,7 +55,7 @@ Then, you can use the `plural` filter provided by the extension in your template
 ```twig
 {# templates/my-template.html.twig #}
 
-<p>Il y a {{ 'utilisateur'|plural(users) }} utilisateurs dans la base de données.</p>
+<p>Il y a {{ users|length }} {{ 'utilisateur'|plural(users) }} dans la base de données.</p>
 ```
 
 
