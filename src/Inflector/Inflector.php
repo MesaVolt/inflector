@@ -42,13 +42,13 @@ abstract class Inflector
             $_ouExceptions = ['bijou', 'caillou', 'chou', 'genou', 'hibou', 'joujou', 'pou'];
             $_ailExceptions = ['bail', 'corail', 'émail', 'fermail', 'gemmail', 'soupirail', 'travail', 'vantail', 'ventail', 'vitrail'];
 
-            if (!in_array($singular, $_auExceptions, true) && (self::endsWith($singular, 'au') || self::endsWith($singular, 'eau') || self::endsWith($singular, 'eu'))) {
+            if (!in_array($singular, $_auExceptions, true) && (str_ends_with($singular, 'au') || str_ends_with($singular, 'eau') || str_ends_with($singular, 'eu'))) {
                 $plural = $singular.'x';
-            } elseif (!in_array($singular, $_alExceptions, true) && self::endsWith($singular, 'al')) {
+            } elseif (!in_array($singular, $_alExceptions, true) && str_ends_with($singular, 'al')) {
                 $plural = substr($singular, 0, strlen($singular) - strlen('al')).'aux';
-            } elseif (in_array($singular, $_ouExceptions, true) && self::endsWith($singular, 'ou')) {
+            } elseif (in_array($singular, $_ouExceptions, true) && str_ends_with($singular, 'ou')) {
                 $plural = $singular.'x';
-            } elseif (in_array($singular, $_ailExceptions, true) && self::endsWith($singular, 'ail')) {
+            } elseif (in_array($singular, $_ailExceptions, true) && str_ends_with($singular, 'ail')) {
                 $plural = substr($singular, 0, strlen($singular) - strlen('ail')).'aux';
             } else {
                 $plural = $singular.'s';
@@ -56,19 +56,5 @@ abstract class Inflector
         }
 
         return $plural;
-    }
-
-    /**
-     * Returns true if the specified $haystack ends with the specified $needle.
-     */
-    private static function endsWith(string $haystack, string $needle): bool
-    {
-        $length = strlen($needle);
-
-        if ($length === 0) {
-            return false;
-        }
-
-        return substr($haystack, -$length) === $needle;
     }
 }
