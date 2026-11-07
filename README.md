@@ -1,8 +1,7 @@
 # French plural inflector for PHP 8.2+
 
 [![Latest Stable Version](https://poser.pugx.org/mesavolt/inflector/v/stable)](https://packagist.org/packages/mesavolt/inflector)
-[![Build Status](https://travis-ci.org/MesaVolt/inflector.svg)](https://travis-ci.org/MesaVolt/inflector)
-[![Coverage Status](https://coveralls.io/repos/github/MesaVolt/inflector/badge.svg)](https://coveralls.io/github/MesaVolt/inflector)
+[![Tests](https://github.com/MesaVolt/inflector/actions/workflows/tests.yml/badge.svg)](https://github.com/MesaVolt/inflector/actions/workflows/tests.yml)
 [![License](https://poser.pugx.org/mesavolt/inflector/license)](https://packagist.org/packages/mesavolt/inflector)
 
 ## Usage
