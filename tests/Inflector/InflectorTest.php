@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace MesaVolt\Tests\Inflector;
 
 use MesaVolt\Inflector\Inflector;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 final class InflectorTest extends TestCase
@@ -16,16 +17,14 @@ final class InflectorTest extends TestCase
         $this->assertEquals('développeurs', Inflector::plural('développeur', ['test', 'array']));
     }
 
-    /**
-     * @dataProvider dataProvider_exceptions
-     */
+    #[DataProvider('dataProvider_exceptions')]
     public function test_exceptions(string $singular, string $expectedPlural): void
     {
         $this->assertEquals($singular, Inflector::plural($singular, 1));
         $this->assertEquals($expectedPlural, Inflector::plural($singular, 2));
     }
 
-    public function dataProvider_exceptions(): array
+    public static function dataProvider_exceptions(): array
     {
         return [
             // -au, -eau, -eu

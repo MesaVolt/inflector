@@ -23,12 +23,12 @@
         "sort-packages": true
     },
     "require": {
-        "php": ">=7.1",
+        "php": ">=8.2",
         "ext-json": "*"
     },
     "require-dev": {
         "php-coveralls/php-coveralls": "^2.0",
-        "phpunit/phpunit": "^7",
-        "twig/twig": "^2.4"
+        "phpunit/phpunit": "^11",
+        "twig/twig": "^3"
     }
 }

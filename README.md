@@ -1,4 +1,4 @@
-# Inflection helper
+# French plural inflector for PHP 8.2+
 
 [![Latest Stable Version](https://poser.pugx.org/mesavolt/inflector/v/stable)](https://packagist.org/packages/mesavolt/inflector)
 [![Build Status](https://travis-ci.org/MesaVolt/inflector.svg)](https://travis-ci.org/MesaVolt/inflector)
