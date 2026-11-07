@@ -29,7 +29,7 @@ abstract class Inflector
         } elseif ($criteria === null) {
             return $singular;
         } else {
-            throw new \InvalidArgumentException(sprintf('Invalid argument provided to %s - expected countable, array or numeric, got %s', __METHOD__, get_class($criteria)));
+            throw new \InvalidArgumentException(sprintf('Invalid argument provided to %s - expected countable, array or numeric, got %s', __METHOD__, get_debug_type($criteria)));
         }
 
         if ($count <= 1) {

@@ -46,4 +46,11 @@ final class InflectorTest extends TestCase
             ['corail', 'coraux'],
         ];
     }
+
+    public function test_invalidCriteria(): void
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $this->expectExceptionMessage('got string');
+        Inflector::plural('cheval', 'abc');
+    }
 }
