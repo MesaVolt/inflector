@@ -26,7 +26,7 @@ Inflector::plural('un petit cheval', 2, 'des petits chevaux'); // Returns 'des p
 
 ## Integration
 
-### Symfony >=3 with Twig >1.26
+### Symfony with Twig
 
 If you use the default
 [auto-configuring feature of Symfony introduced in Symfony 3.3](https://symfony.com/doc/current/service_container/3.3-di-changes.html),

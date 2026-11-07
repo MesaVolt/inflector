@@ -26,6 +26,9 @@
         "php": ">=8.2",
         "ext-json": "*"
     },
+    "suggest": {
+        "twig/twig": "Required to use the MesaVolt\\Twig\\InflectorExtension Twig filter (^3)"
+    },
     "require-dev": {
         "php-coveralls/php-coveralls": "^2.0",
         "phpunit/phpunit": "^11",
