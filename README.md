@@ -1,4 +1,4 @@
-# Named enum for PHP 7.1 +
+# Inflection helper
 
 [![Latest Stable Version](https://poser.pugx.org/mesavolt/inflector/v/stable)](https://packagist.org/packages/mesavolt/inflector)
 [![Build Status](https://travis-ci.org/MesaVolt/inflector.svg)](https://travis-ci.org/MesaVolt/inflector)
@@ -16,7 +16,7 @@ composer require mesavolt/inflector
 ```php
 // Use it with any number or countable value:
 Inflector::plural('cheval', 2);     // Returns 'chevaux'
-Inflector::plural('cheval', 1);     // Returns 'chevaux'
+Inflector::plural('cheval', 1);     // Returns 'cheval'
 Inflector::plural('cheval', [$horse1, $horse2]); // Returns 'chevaux'
 
 // Specify the plural form if you want:
