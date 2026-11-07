@@ -13,6 +13,8 @@ final class InflectorTest extends TestCase
     {
         $this->assertEquals('développeur', Inflector::plural('développeur', 1));
         $this->assertEquals('développeurs', Inflector::plural('développeur', 2));
+        $this->assertEquals('kilo', Inflector::plural('kilo', 1.5));
+        $this->assertEquals('kilos', Inflector::plural('kilo', 2.5));
         $this->assertEquals('développeur', Inflector::plural('développeur', ['test']));
         $this->assertEquals('développeurs', Inflector::plural('développeur', ['test', 'array']));
     }

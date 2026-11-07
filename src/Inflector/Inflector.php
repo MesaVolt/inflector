@@ -5,7 +5,7 @@ namespace MesaVolt\Inflector;
 abstract class Inflector
 {
     /**
-     * Transforms a singular expression into its plural equivalent, if the criteria is considered as greater than 1.
+     * Transforms a singular expression into its plural equivalent, if the criteria is 2 or more (French rule: 1.5 kilo, 2 kilos).
      *
      * ```php
      * Inflector::plural('cheval', 2)               // => chevaux
@@ -32,7 +32,7 @@ abstract class Inflector
             throw new \InvalidArgumentException(sprintf('Invalid argument provided to %s - expected countable, array or numeric, got %s', __METHOD__, get_debug_type($criteria)));
         }
 
-        if ($count <= 1) {
+        if ($count < 2) {
             return $singular;
         }
 
