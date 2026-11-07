@@ -23,15 +23,14 @@
         "sort-packages": true
     },
     "require": {
-        "php": ">=8.2",
-        "ext-json": "*"
+        "php": ">=8.2"
     },
     "suggest": {
         "twig/twig": "Required to use the MesaVolt\\Twig\\InflectorExtension Twig filter (^3)"
     },
     "require-dev": {
         "php-coveralls/php-coveralls": "^2.0",
-        "phpunit/phpunit": "^11",
+        "phpunit/phpunit": "^11.5 || ^12.5 || ^13.4",
         "twig/twig": "^3"
     }
 }
