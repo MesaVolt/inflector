@@ -39,7 +39,7 @@ abstract class Inflector
         if (!$plural) {
             $_auExceptions = ['landau', 'sarrau', 'bleu', 'pneu'];
             $_alExceptions = ['aval', 'bal', 'carnaval', 'chacal', 'cérémonial', 'festival', 'pal', 'régal'];
-            $_ouExceptions = ['bijou', 'caillou', 'chou', 'genou', 'hibou', ''];
+            $_ouExceptions = ['bijou', 'caillou', 'chou', 'genou', 'hibou', 'joujou', 'pou'];
             $_ailExceptions = ['bail', 'corail', 'émail', 'fermail', 'gemmail', 'soupirail', 'travail', 'vantail', 'ventail', 'vitrail'];
 
             if (!in_array($singular, $_auExceptions, true) && (self::endsWith($singular, 'au') || self::endsWith($singular, 'eau') || self::endsWith($singular, 'eu'))) {

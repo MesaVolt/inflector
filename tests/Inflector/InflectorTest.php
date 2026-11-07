@@ -42,6 +42,8 @@ final class InflectorTest extends TestCase
             // -ou
             ['fou', 'fous'],
             ['bijou', 'bijoux'],
+            ['joujou', 'joujoux'],
+            ['pou', 'poux'],
 
             // -ail
             ['éventail', 'éventails'],
